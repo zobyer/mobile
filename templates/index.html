@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CSS CRUSH</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+	<div class="main">
+		<nav>
+			<div class="logo">
+				<img src="{% static 'images/logo.png' %}">
+			</div>
+			<div class="nav_link">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="register">REGISTER</a></li>
+					<li><a href="log_in">LOG IN</a></li>
+					<li><a href="#">CART</a></li>
+					<li><a href="#">CART</a></li>
+				</ul>
+				
+			</div>
+		</nav>
+		<div class="information">
+			<div class="overlay"></div>
+				<img src="{% static 'images/mobile.png' %}" class="mobile" alt="mobile pics">
+		
+			<div id="circle">
+					<div class="feature one">
+						<img src="{% static 'images/processor.png' %}" alt="processor image">
+						<div>
+							<h1>Processor</h1>
+							<p>Snap Dragon Octa Core 11nm</p>
+						</div>
+					</div>
+					<div class="feature two">
+						<img src="{% static 'images/display.png' %}" alt="display image">
+						<div>
+							<h1>Display</h1>
+							<p>6.5" Full Screen Mini Drop</p>
+						</div>
+					</div>
+					<div class="feature three">
+						<img src="{% static 'images/camera.png' %}">
+						<div>
+							<h1>Camera</h1>
+							<p>12MP, Wide Angle Lens</p>
+						</div>
+					</div>
+					<div class="feature four">
+						<img src="{% static 'images/battery.png' %}">
+						<div>
+							<h1>Battery</h1>
+							<p>500mAh 720hr</p>
+						</div>
+					</div>
+
+			</div>
+			
+		</div>
+
+		<div class="control">
+			<img src="{% static 'images/arrow.png' %}" id="upbtn">
+			<h3>Features</h3>
+			<img src="{% static 'images/arrow.png' %}" id="downbtn">
+		</div>
+		
+	</div>
+	<script type="text/javascript">
+		var circle = document.getElementById("circle");
+		var upbtn = document.getElementById("upbtn");
+		var downbtn = document.getElementById("downbtn");
+
+		var rotateValue = circle.style.transform;
+		var rotateSum;
+
+		upbtn.onclick = function(){
+			rotateSum = rotateValue + "rotate(-90deg)";
+			circle.style.transform = rotateSum;
+			rotateValue = rotateSum;
+		}
+
+		downbtn.onclick = function(){
+			rotateSum = rotateValue + "rotate(90deg)";
+			circle.style.transform = rotateSum;
+			rotateValue = rotateSum;
+		}
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-image: url(../images/login.jpg);
+
+}
+
+.login{
+	width: 350px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.login h1{
+	font-size: 38px;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+	color: white;
+	text-align: center;
+}
+
+.text{
+	margin-bottom: 20px;
+
+}
+
+.field{
+	width: 100%;
+	font-size: 19px;
+	background: none;
+	border:none;
+	outline: none;
+	border-bottom: 1px solid white;
+	color: white;
+}
+
+.submit{
+	width: 100%;
+	height: 35px;
+	font-size: 25px;
+	letter-spacing: 2px;
+	margin-top: 10px;
+	border-radius: 12px;
+}
+
+.submit:hover{
+	background:#03e9f4;
+	color: #050801;
+	box-shadow: 0 0 5px #03e9f4,0 0 25px #03e9f4,0 0 50px #03e9f4,0 0 200px #03e9f4;
+}
